@@ -1,0 +1,104 @@
+﻿@model AnimeResource.Models.anime
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>anime</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sound.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sound.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nameanim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nameanim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.about)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.about)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kolser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kolser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kolova)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kolova)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kolmov)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kolmov)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.kolsp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kolsp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

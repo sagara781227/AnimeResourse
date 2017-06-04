@@ -1,0 +1,42 @@
+﻿@model AnimeResource.Models.whatch_seasons
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>whatch_seasons</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.serii.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serii.link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.users_anime.id_user)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.users_anime.id_user)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.wotch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.wotch)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_ws }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

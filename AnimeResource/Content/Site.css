@@ -1,0 +1,89 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: aliceblue;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#heder_block {
+    border-radius: 10px !important;
+    height: 52px !important;
+    width:100%;
+}
+
+#footer_block {
+    text-align: center;
+    color: #5e5e5e;
+    background-color: #2d2e2d;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+
+#right_block {
+    background-color: #1329d8;
+    color: aqua;
+    border-radius: 5px;
+}
+
+#left_block {
+    background-color: #1329d8;
+    color: aqua;
+    border-radius: 5px;
+}
+
+#emblem {
+    text-align: center;
+    color: #0b0063;
+    font-family: 'Times New Roman';
+    font-size: 70px;
+    background-color: #682b08;
+    height: 100px;
+}
+
+table {
+    border-color: #000000 !important;
+    border-style: initial !important;
+}
+
+footer {
+    padding-bottom: 0px;
+    width:100%;
+}
+
+#img_anime_block {
+    width: 200px;
+    border-radius: 10px !important;
+    position: relative !important;
+    vertical-align: top !important;
+}
+
+#img_anime_details {
+    width: 400px;
+    border-radius: 10px !important;
+    position: relative !important;
+    vertical-align: top !important;
+}
+
+#anime_block {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #100365;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 10px;
+    text-align:justify;
+}
+
+#anime_name{
+    color: #0b0063;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-style:unset;
+}

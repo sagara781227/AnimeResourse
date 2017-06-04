@@ -1,0 +1,45 @@
+﻿@model IEnumerable<AnimeResource.Models.whatch_seasons>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.serii.link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.users_anime.id_user)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.wotch)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.serii.link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.users_anime.id_user)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.wotch)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_ws }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_ws }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_ws })
+        </td>
+    </tr>
+}
+
+</table>

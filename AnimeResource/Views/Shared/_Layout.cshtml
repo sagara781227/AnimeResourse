@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title AnimeDay</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="container" id="heder_block">
+        <div class="row">
+            <div class="navbar navbar-inverse col-sm-12" style="background-color: #2d2e2d">
+                @*<div class="col-sm-1"></div>*@
+                <div class="navbar-header col-sm-12">
+                    @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>*@
+                    @Html.ActionLink("Главная", "Index", "animes", new { area = "" }, new { @class = "navbar-brand" })
+                    @*@Html.ActionLink("Вход", "Login", "Account", new { area = "" }, new { @class = "navbar-brand" })*@
+                    @Html.Partial("_LoginPartial")
+                </div>
+                @*<div class="col-sm-1"></div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="emblem">
+        <div class="row">
+            <p>
+                AnimeDay
+            </p>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <div class="row">
+            <div id="left_block" class="col-sm-2">
+                <table>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-8">
+                @RenderBody()
+                <hr />
+            </div>
+            <div id="right_block" class="col-sm-2">
+                <table style="border-color:#000000">
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                    <tr>
+                        <td>ju</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container" id="footer_block">
+            <p>Разработал Уманцев А.С.</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </div>
+    </footer>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

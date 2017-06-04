@@ -1,0 +1,66 @@
+﻿@model AnimeResource.Models.user
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>user</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.profile.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.profile.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.role.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.role.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pasword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pasword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.e_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.e_mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.confirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.confirmed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_user }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

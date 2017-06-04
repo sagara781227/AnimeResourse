@@ -1,0 +1,33 @@
+﻿@model AnimeResource.Models.anime
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Html.DisplayFor(model => model.nameanim)</h2>
+
+<div>
+    <img src="@Html.DisplayFor(model => model.image)" id="img_anime_details"/>
+
+    <br><b>Язык озвучивания:</b> @Html.DisplayFor(model => model.sound.name)
+
+    <br><b>Год выпуска:</b> @Html.DisplayFor(model => model.year)
+
+    <br><b>Количество серий:</b> @Html.DisplayFor(model => model.kolser)
+
+    <br><b>Количество OVA:</b> @Html.DisplayFor(model => model.kolova)
+
+    <br><b>Количество спец. серий:</b> @Html.DisplayFor(model => model.kolsp)
+
+    <br><b>Количество movie:</b> @Html.DisplayFor(model => model.kolmov)
+
+    <br><b>Описание:</b> @Html.DisplayFor(model => model.about)
+
+    <p><a href="@Html.DisplayFor(model => model.link)">Скачать торрент</a></p>
+</div>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_anime }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

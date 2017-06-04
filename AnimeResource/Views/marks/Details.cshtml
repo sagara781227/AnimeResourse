@@ -1,0 +1,42 @@
+﻿@model AnimeResource.Models.mark
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>mark</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.anime.nameanim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anime.nameanim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mark1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mark1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_mark }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

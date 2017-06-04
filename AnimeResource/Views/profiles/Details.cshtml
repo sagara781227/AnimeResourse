@@ -1,0 +1,82 @@
+﻿@model AnimeResource.Models.profile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>profile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.country.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.country.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sex.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sex.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.login)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.login)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sername)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sername)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.birth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.birth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.avatar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.avatar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.about)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.about)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_user }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<AnimeResource.Models.anime>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div id="anime_block">
+        <p id="anime_name">@Html.ActionLink(@Html.DisplayFor(modelItem => item.nameanim).ToString(), "Details", new { id = item.id_anime })</p>
+
+        <img id="img_anime_block" src="@Html.DisplayFor(modelItem => item.image)" />
+
+        <br><b>Язык озвучивания:</b> @Html.DisplayFor(modelItem => item.sound.name)
+
+        <br><b>Год выпуска:</b> @Html.DisplayFor(modelItem => item.year)
+
+        <br><b>Количество серий:</b> @Html.DisplayFor(modelItem => item.kolser)
+
+        <br><b>Количество OVA:</b> @Html.DisplayFor(modelItem => item.kolova)
+
+        <br><b>Количество спец. серий:</b> @Html.DisplayFor(modelItem => item.kolsp)
+
+        <br><b>Количество movie:</b> @Html.DisplayFor(modelItem => item.kolmov)
+
+        <br><b>Описание:</b> @Html.DisplayFor(modelItem => item.about)
+
+        @*<p><a href="@Html.DisplayFor(modelItem => item.link)">Скачать торрент</a></p>*@
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id_anime }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id_anime }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_anime })
+        </p> 
+    </div>
+}
+
+@*</table>*@

@@ -1,0 +1,42 @@
+﻿@model AnimeResource.Models.serii
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>serii</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.anime.nameanim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anime.nameanim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.typeser.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.typeser.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_serii }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
